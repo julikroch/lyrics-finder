@@ -1,5 +1,5 @@
-import { useState } from "react"
-import Error from "./Error"
+import { useState } from 'react'
+import Error from './Error'
 
 const Form = (props: { saveLyrics: any }) => {
 
@@ -28,38 +28,38 @@ const Form = (props: { saveLyrics: any }) => {
     }
 
     return (
-        <div className="bg-info">
-            <div className="container">
-                <div className="row">
+        <div className='bg-info'>
+            <div className='container'>
+                <div className='row'>
                     <form
                         onSubmit={searchInfo}
-                        className="col card text-white bg-transparent mb-5 pt-5 pb-2"
+                        className='col card text-white bg-transparent mb-5 pt-5 pb-2'
                     >
                         <fieldset>
-                            <legend className="text-center">Lyrics Finder</legend>
+                            <legend className='text-center'>Lyrics Finder</legend>
                             {error && <Error text='All fields are required' />}
-                            <div className="row">
-                                <div className="col-md-6">
-                                    <div className="form-group">
+                            <div className='row'>
+                                <div className='col-md-6'>
+                                    <div className='form-group'>
                                         <label>Artist</label>
                                         <input
-                                            type="text"
-                                            className="form-control"
-                                            name="artist"
-                                            placeholder="Artist Name"
+                                            type='text'
+                                            className='form-control'
+                                            name='artist'
+                                            placeholder='Artist Name'
                                             onChange={saveState}
                                             value={artist}
                                         />
                                     </div>
                                 </div>
-                                <div className="col-md-6">
-                                    <div className="form-group">
+                                <div className='col-md-6'>
+                                    <div className='form-group'>
                                         <label>Song</label>
                                         <input
-                                            type="text"
-                                            className="form-control"
-                                            name="song"
-                                            placeholder="Song Name"
+                                            type='text'
+                                            className='form-control'
+                                            name='song'
+                                            placeholder='Song Name'
                                             onChange={saveState}
                                             value={song}
                                         />
@@ -68,8 +68,8 @@ const Form = (props: { saveLyrics: any }) => {
                             </div>
 
                             <button
-                                type="submit"
-                                className="btn btn-primary float-right"
+                                type='submit'
+                                className='btn btn-primary float-right'
                             >Search</button>
                         </fieldset>
                     </form>
